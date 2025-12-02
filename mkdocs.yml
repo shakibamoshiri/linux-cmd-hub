@@ -1,0 +1,128 @@
+site_name: Linux commands hubs for geeks and power users
+
+site_url: https://cmdhub.shakiba.net/
+repo_url: https://github.com/shakibamoshiri/linux-cmd-hub
+repo_name: shakibamoshiri/linux-cmd-hub
+
+
+
+theme:
+  name: material
+  direction: ltr
+  icon:
+    logo: lucide/book-text
+    favicon: assets/images/favicon.png
+    repo: simple/git
+
+  features:
+    - navigation.top
+    - navigation.instant
+    - navigation.instant.progress
+    - navigation.tabs
+    - navigation.path
+    # - navigation.expand
+    - navigation.indexes
+    - navigation.footer
+    - navigation.sections
+    - header.autohide
+    - content.code.copy
+    - content.code.select
+    - content.code.annotate
+  palette:
+    # Palette toggle for light mode
+    - media: "(prefers-color-scheme: light)"
+      scheme: default
+      primary: green
+      toggle:
+        icon: material/brightness-7
+        name: Switch to dark mode
+
+    # Palette toggle for dark mode
+    - media: "(prefers-color-scheme: dark)"
+      scheme: slate
+      primary: indigo
+      toggle:
+        icon: material/brightness-4
+        name: Switch to system preference
+
+
+nav:
+  - Hi:
+    - index.md
+  - Net:
+    - net/index.md
+    - net/curl.md
+    - net/dig.md
+    - net/ip.md
+    - net/tcpdump.md
+    - net/tcpflow.md
+    - net/ssh.md
+  - Disk:
+    - disk/index.md
+  - File:
+    - file/index.md
+    - file/grep.md
+    - file/find.md
+  - Media:
+    - media/index.md
+    - media/ffmpeg.md
+    - media/mpv.md
+  - System:
+    - system/index.md
+    - system/ps.md
+  - Security:
+    - sec/index.md
+    - sec/tr.md
+    - sec/openssl.md
+
+
+
+extra_css:
+  - stylesheets/extra.css
+
+extra:
+  generator: true
+  social:
+    - name: Github
+      icon: material/github
+      link: https://github.com/shakibamoshiri/linux-cmd-hub
+
+copyright: >
+  Copyright &copy; 20XX Shakiba Moshiri
+
+
+markdown_extensions:
+  - toc:
+      permalink: true
+  - abbr
+  - admonition
+  - attr_list
+  - md_in_html
+  - footnotes
+  - def_list
+  - tables
+  - pymdownx.inlinehilite
+  - pymdownx.snippets
+  - pymdownx.superfences
+  - pymdownx.details
+  - pymdownx.critic
+  - pymdownx.caret
+  - pymdownx.keys
+  - pymdownx.mark
+  - pymdownx.tilde
+  - pymdownx.magiclink
+  - pymdownx.highlight:
+      anchor_linenums: true
+  - pymdownx.tabbed:
+      alternate_style: true
+  - pymdownx.tasklist:
+      custom_checkbox: true
+  - pymdownx.emoji:
+      emoji_index: !!python/name:material.extensions.emoji.twemoji
+      emoji_generator: !!python/name:material.extensions.emoji.to_svg
+  - pymdownx.superfences:
+      custom_fences:
+        - name: mermaid
+          class: mermaid
+          format: !!python/name:pymdownx.superfences.fence_code_format
+
