@@ -47,8 +47,6 @@ theme:
 
 
 nav:
-  - Hi:
-    - index.md
   - Net:
     - net/index.md
     - net/curl.md

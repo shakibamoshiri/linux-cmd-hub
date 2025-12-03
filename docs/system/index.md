@@ -6,3 +6,5 @@
     _black box of thinking_
 
 
+!!! quote "Anonymous"
+    Good systems save bad people, bad systems sink good people.

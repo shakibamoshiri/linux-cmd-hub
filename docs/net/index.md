@@ -1,3 +1,5 @@
 # :lucide-network: Net
 
-Networking
+
+!!! quote "Anonymous"
+    Good networks are invisible; bad ones introduce themselves
